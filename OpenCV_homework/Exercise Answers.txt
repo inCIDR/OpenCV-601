@@ -1,0 +1,15 @@
+Exercise Answers
+Exercise 1
+A CV Mat is an N-dimensional matrix that stores the intensity of all pixel data. It can be written and read with imwrite and imread and outputted as a image with a color scheme (RGB,HSV,etc)
+
+Exercise 2
+1. RGB is pretty standard, HSV and YCrCb seem to have a clear image each (V,Y), but have 2 matte shades to help give the image texture. Kind of hard to describe them if you're used to RGB.
+2.
+[ 96 173 165]
+[162 130  91]
+[ 87 113 173]
+rgb ranges from 0-255 for all 3
+YCrCb ranges from 16-235 for Y and 16-240 for Cr and Cb
+HSV ranges from 0-179 for H and 0-255 for S and V
+
+Exercise 3
