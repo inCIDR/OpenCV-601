@@ -14,7 +14,9 @@ YCrCb ranges from 16-235 for Y and 16-240 for Cr and Cb
 HSV ranges from 0-179 for H and 0-255 for S and V
 
 Exercise 3
-
+1. Since there are too many combinations of outputs, I will just say what the outputs meant. Gaussian noise makes the noise normally distributed. Increasing the mean increases the expected value of the noise. Basically, it provides the "intensity" of the noise, making things whiter and less clear. The sigma is the standard deviation, meaning how much the noise actually deviates from the mean. This will cause the image to look less like the image and be completely jumbled.
+For Salt and pepper noise, pa and pb represent the amount of pixels that actually get changed to black or white. The higher pa increases the amount of black pixels and the higher pb increases the amount of white pixels
+2. To me, when the gaussian noise is applied, the gaussian filter does the best job smoothing out the image. When the salt and pepper is applied, the gaussian preserves far more detail, but the median filter gives the most color distinction.
 
 Exercise 4
 look at baboon threshold.png for the images
