@@ -13,8 +13,16 @@ rgb ranges from 0-255 for all 3
 YCrCb ranges from 16-235 for Y and 16-240 for Cr and Cb
 HSV ranges from 0-179 for H and 0-255 for S and V
 
+Exercise 3
+
+
 Exercise 4
 look at baboon threshold.png for the images
 1. Thresholding seems to get rid of certain colors beyond a spectrum. It is useful to show facial features/outlines of an object in the image. The threshold values change how much of the picture is seen. It seems like Binary is the colorswap of Band Thresholding. Adaptive seems very clear, removing a lot of fine details and leaving a very crisp image. Semi Thresholding darkens the image and isn't very clear.
 2. Binary thresholding, while maintaining image integrity, is somewhat hard to distinguish borders, as it includes a lot of unnecessary detail if you want to identify something.
 3. Adaptive Thresholding has crisp borders, thus makes it much easier to identify facial features like eyes,nose, and mouth.
+
+Exercise 5
+1. Face tracking is pretty cool, but seems slightly gimicky depending on the method used. Isn't terribly reliable.
+2. Object detection might have problems when orientation is flipped. For instance, if I turn slightly, my facial feature might seem different. In that case, tracking is better since it tracks the facial features so that if it is suddenly oriented differently, it can better account for it. In addition, having to constantly reevaluate frames as images is probably more computationally intensive.
+3. It's pretty neat that it can detect an object like that. However, that's just a copy and paste of the image and it basically compares it. If it is a different apple, will it identify as an apple? In addition, for the business card example, what if the template is slightly different? It is certainly useful, but seems like it would be constrained.
