@@ -1,5 +1,6 @@
 from cv2 import *
-src = imread("Test_images/baboon.jpg", 1)
+import sys
+src = imread(sys.argv[1], 1)
 
 gray_image = cvtColor(src, COLOR_BGR2GRAY)
 

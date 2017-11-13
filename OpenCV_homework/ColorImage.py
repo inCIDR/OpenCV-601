@@ -1,10 +1,13 @@
 import cv2
+import sys
 
-src = cv2.imread("Test_images/baboon.jpg", cv2.IMREAD_COLOR);
+src = cv2.imread(sys.argv[1], cv2.IMREAD_COLOR);
 cv2.namedWindow( "Original image", cv2.WINDOW_NORMAL );
 cv2.imshow( "Original image", src);
 
 print (src[25,20])
+red,green,blue = cv2.split(src)
+'''
 red = src.copy()
 red[:, :, 1] = 0
 red[:, :, 2] = 0
@@ -16,7 +19,7 @@ green[:, :, 2] = 0
 blue = src.copy()
 blue[:, :, 1] = 0
 blue[:, :, 0] = 0
-
+'''
 cv2.imshow("red",red)
 cv2.imshow("green",green)
 cv2.imshow("blue",blue)

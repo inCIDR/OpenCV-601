@@ -1,5 +1,6 @@
 import cv2
 import numpy as np
+import sys
 
 def Add_salt_pepper_noise(img,pa,pb):
      sp_noise =img.copy()
@@ -19,7 +20,7 @@ def Add_gaussian_noise(img,mean,sigma):
 	NoiseArr = cv2.add(img,NoiseArr)
 	return NoiseArr
 
-image = cv2.imread("Test_images/baboon.jpg", 0);
+image = cv2.imread(sys.argv[1], 0);
 cv2.namedWindow( "Original image", cv2.WINDOW_NORMAL );
 cv2.imshow( "Original image", image);
 
